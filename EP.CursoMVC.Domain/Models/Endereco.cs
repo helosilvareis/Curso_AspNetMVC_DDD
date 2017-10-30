@@ -22,6 +22,6 @@ namespace EP.CursoMVC.Domain.Models
         public Guid ClienteId { get; set; }
 
         //Propriedade de navegação
-        public Cliente Cliente { get; set; }
+        public virtual Cliente Cliente { get; set; }
     }
 }

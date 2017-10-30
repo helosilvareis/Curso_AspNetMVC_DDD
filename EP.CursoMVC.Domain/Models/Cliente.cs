@@ -17,6 +17,6 @@ namespace EP.CursoMVC.Domain.Models
         public DateTime DataCadastro { get; set; }
         public bool Ativo { get; set; }
         public bool Excluido { get; set; }
-        public ICollection<Endereco> Enderecos { get; set; }
+        public virtual ICollection<Endereco> Enderecos { get; set; }
     }
 }
