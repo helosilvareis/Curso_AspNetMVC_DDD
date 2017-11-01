@@ -4,14 +4,8 @@ using System.Text;
 
 namespace EP.CursoMVC.Domain.Models
 {
-    public class Endereco
+    public class Endereco :Entity
     {
-        public Endereco()
-        {
-            ID = Guid.NewGuid();
-        }
-        public Guid ID { get; set; }
-
         public string Logradouro { get; set; }
         public string Numero { get; set; }
         public string Complemento { get; set; }
@@ -23,5 +17,10 @@ namespace EP.CursoMVC.Domain.Models
 
         //Propriedade de navegação
         public virtual Cliente Cliente { get; set; }
+
+        public override bool EhValido()
+        {
+            return true;
+        }
     }
 }

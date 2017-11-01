@@ -13,7 +13,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Domain", "4 - Domain", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Infra", "5 - Infra", "{FC180497-791A-47B6-8DFC-080E79513349}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EP.CursoMVC.Domain", "EP.CursoMVC.Domain\EP.CursoMVC.Domain.csproj", "{0571820F-B676-4618-8995-0C4ADDC10BF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EP.CursoMVC.Domain", "EP.CursoMVC.Domain\EP.CursoMVC.Domain.csproj", "{0571820F-B676-4618-8995-0C4ADDC10BF6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.1 - Data", "5.1 - Data", "{8C070FF6-FF12-4139-8856-80A6AC5210C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.2 - CrossCuting", "5.2 - CrossCuting", "{E2FA7B2F-4B25-44CE-8E31-1F447047FFE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EP.CursoMVC.Infra.Data", "EP.CursoMvc.Infra.Data\EP.CursoMVC.Infra.Data.csproj", "{5B6E8101-45E2-41F2-A7A4-779EA2C0D7F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,12 +31,19 @@ Global
 		{0571820F-B676-4618-8995-0C4ADDC10BF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0571820F-B676-4618-8995-0C4ADDC10BF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0571820F-B676-4618-8995-0C4ADDC10BF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B6E8101-45E2-41F2-A7A4-779EA2C0D7F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B6E8101-45E2-41F2-A7A4-779EA2C0D7F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B6E8101-45E2-41F2-A7A4-779EA2C0D7F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B6E8101-45E2-41F2-A7A4-779EA2C0D7F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{0571820F-B676-4618-8995-0C4ADDC10BF6} = {DE51BA07-17B0-4534-BAC0-A4B7669BDDDB}
+		{8C070FF6-FF12-4139-8856-80A6AC5210C6} = {FC180497-791A-47B6-8DFC-080E79513349}
+		{E2FA7B2F-4B25-44CE-8E31-1F447047FFE5} = {FC180497-791A-47B6-8DFC-080E79513349}
+		{5B6E8101-45E2-41F2-A7A4-779EA2C0D7F3} = {8C070FF6-FF12-4139-8856-80A6AC5210C6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CAAC71B3-F8C5-439A-9880-55158EF7437D}

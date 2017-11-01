@@ -3,13 +3,10 @@ using System.Collections.Generic;
 
 namespace EP.CursoMVC.Domain.Models
 {
-    public class Cliente
+    public class Cliente : Entity
     {
-        public Cliente()
-        {
-            ID = Guid.NewGuid();
-        }
-        public Guid ID { get; set; }
+        public Cliente() => Enderecos = new List<Endereco>();
+
         public string Nome { get; set; }
         public string Email { get; set; }
         public string CPF { get; set; }
@@ -20,7 +17,24 @@ namespace EP.CursoMVC.Domain.Models
         public virtual ICollection<Endereco> Enderecos { get; set; }
         public void Excluir()
         {
+            Ativo = false;
+            Excluido = true;            
+        }
+        public void Ativar()
+        {
+            Ativo = true;
+            Excluido = false;
+        }
+        public override bool EhValido()
+        {
+            return true;
+        }
+        public void AdicionarEndereco(Endereco endereco)
+        {
+            if (!endereco.EhValido())
+                return;
 
+            Enderecos.Add(endereco);
         }
     }
 }
